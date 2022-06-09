@@ -1,5 +1,4 @@
 export default function initAccordion() {
-  console.log('q');
   const accordionList = document.querySelectorAll(
     '[data-anime="accordion"] dt',
   );
