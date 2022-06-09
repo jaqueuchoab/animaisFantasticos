@@ -54,7 +54,7 @@ body {
   margin-right: 10px;
   color: #222;
   text-decoration: none;
-  font-family: "IBM Plex Mono", monospace;
+  font-family: 'IBM Plex Mono', monospace;
   font-weight: bold;
   text-transform: uppercase;
   font-size: 0.875rem;
@@ -73,7 +73,7 @@ body {
 }
 
 .titulo {
-  font-family: "Playfair Display SC", georgia;
+  font-family: 'Playfair Display SC', georgia;
   font-size: 6rem;
   line-height: 1;
   font-weight: 400;
@@ -82,7 +82,7 @@ body {
 }
 
 .animais h2 {
-  font-family: "IBM Plex Mono", monospace;
+  font-family: 'IBM Plex Mono', monospace;
   font-size: 1rem;
   text-transform: uppercase;
   letter-spacing: 0.1em;
@@ -91,7 +91,7 @@ body {
 }
 
 .animais h2::before {
-  content: "";
+  content: '';
   display: inline-block;
   width: 40px;
   height: 10px;
@@ -142,7 +142,7 @@ body {
 }
 
 .faq-lista dt {
-  font-family: "IBM Plex Mono", monospace;
+  font-family: 'IBM Plex Mono', monospace;
   font-weight: bold;
   margin-top: 2rem;
   margin-bottom: 0.5rem;
@@ -150,7 +150,7 @@ body {
 }
 
 .faq-lista dt::before {
-  content: "";
+  content: '';
   display: inline-block;
   width: 20px;
   height: 10px;
@@ -182,7 +182,7 @@ body {
 }
 
 .dados li::before {
-  content: "";
+  content: '';
   display: inline-block;
   width: 20px;
   height: 10px;
@@ -198,7 +198,7 @@ body {
 
 .copy p {
   padding: 20px;
-  font-family: "IBM Plex Mono", monospace;
+  font-family: 'IBM Plex Mono', monospace;
   font-weight: bold;
 }
 
@@ -235,21 +235,21 @@ body {
 }
 
 /*navegação por tab css*/
-.js [data-tab="content"] section {
+.js [data-tab='content'] section {
   /*estado de antes sem a class ativo*/
   display: none;
 }
 
-[data-tab="content"] section.ativo {
+[data-tab='content'] section.ativo {
   display: block !important;
 }
 
-[data-tab="content"] section.ativo.show-right {
+[data-tab='content'] section.ativo.show-right {
   display: block !important;
   animation: show-right 0.5s forwards; /*chama a 'função' keyframes, define o tempo e diz para ser no estado final de to*/
 }
 
-[data-tab="content"] section.ativo.show-down {
+[data-tab='content'] section.ativo.show-down {
   animation: show-down 0.5s forwards; /*chama a 'função' keyframes, define o tempo e diz para ser no estado final de to*/
 }
 
@@ -279,19 +279,19 @@ body {
   }
 }
 
-.js [data-anime="accordion"] dd {
+.js [data-anime='accordion'] dd {
   display: none;
 }
 
-[data-anime="accordion"] dt::after {
-  content: "⬎";
+[data-anime='accordion'] dt::after {
+  content: '⬎';
 }
 
-[data-anime="accordion"] dt.ativo::after {
-  content: "⬏";
+[data-anime='accordion'] dt.ativo::after {
+  content: '⬏';
 }
 
-[data-anime="accordion"] dd.ativo {
+[data-anime='accordion'] dd.ativo {
   display: block;
   animation: slideDown 0.5s forwards;
 }
@@ -307,12 +307,12 @@ body {
   }
 }
 
-.js [data-anime="scroll"] {
+.js [data-anime='scroll'] {
   opacity: 0;
   transform: translate3d(-30px, 0, 0);
 }
 
-.js [data-anime="scroll"].ativo {
+.js [data-anime='scroll'].ativo {
   opacity: 1;
   transition: 0.3s;
   transform: translate3d(0, 0, 0);
@@ -320,7 +320,7 @@ body {
 
 [data-semana]::after {
   display: inline-block;
-  content: "";
+  content: '';
   width: 6px;
   height: 6px;
   background: rgb(1, 194, 17);
@@ -331,4 +331,11 @@ body {
 
 [data-semana].aberto::after {
   background: rgb(255, 0, 0);
+}
+
+.btc-preco {
+  background: #3f4;
+  padding: 0.2rem 0.5rem;
+  font-weight: bold;
+  border-radius: 2px;
 }
