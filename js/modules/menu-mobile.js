@@ -8,7 +8,7 @@ export default class MenuMobile {
 
     // Define argumentos de events como padrão caso não seja definido pelo usuário da classe
     if (events === undefined) {
-      this.events = ['touchstart', 'click'];
+      this.events = ['touchpad', 'click'];
     } else {
       this.events = events;
     }
